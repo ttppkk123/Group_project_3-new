@@ -8,8 +8,8 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['p_name'];
-        $phone = $_POST['p_phone'];
+        $name = $_POST['patient_name'];
+        $phone = $_POST['phone'];
         $doctor = $_POST['doctor_name'];
 
         echo "<h1>თქვენი ჯავშანი მიღებულია!</h1>";
