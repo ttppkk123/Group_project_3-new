@@ -293,7 +293,7 @@
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPhone">Phone Number</label>
-                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX" name "phone">
+                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX" name="phone">
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputSymptoms">Symptoms</label>
