@@ -634,24 +634,12 @@
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
+           <form action="contact_success.php" method="POST">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="text" name="phone" placeholder="Phone">
+              <textarea name="message" placeholder="Message"></textarea>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>
