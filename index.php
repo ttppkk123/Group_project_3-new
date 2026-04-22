@@ -261,7 +261,7 @@
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPatientName">Patient Name </label>
-                <input type="text" class="form-control" id="inputPatientName" name="patient_name"> 
+                <input type="text" class="form-control" id="inputPatientName" placeholder="" name="patient_name"> 
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDoctorName">Doctor's Name</label>
