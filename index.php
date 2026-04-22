@@ -278,12 +278,12 @@
 
               <div class="form-group col-lg-4">
                 <label for="inputDepartmentName">Department's Name</label>
-                <select name="department_name" class="form-control wide" id="inputDepartmentName"> //updated
+                <select name="department_name" class="form-control wide" id="inputDepartmentName"> 
 
                    <!-- added -->
-                   <?php foreach ($departments as $dept): ?>
-                    <option value="<?php echo $dept['name']; ?>">
-                      <?php echo $dept['name']; ?>
+                   <?php foreach ($treatments as $treat): ?>
+                    <option value="<?php echo $treat['name']; ?>">
+                      <?php echo $treat['name']; ?>
                     </option>
                   <?php endforeach; ?>
                 </select>
