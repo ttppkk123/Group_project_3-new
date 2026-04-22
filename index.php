@@ -254,14 +254,14 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <form action="submit.php" method="POST"> //updated
+          <form action="submit.php" method="POST"> 
             <h4>
               BOOK <span>APPOINTMENT</span>
             </h4>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPatientName">Patient Name </label>
-                <input type="text" class="form-control" id="inputPatientName" name="patient_name"> //updated
+                <input type="text" class="form-control" id="inputPatientName" name="patient_name"> 
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDoctorName">Doctor's Name</label>
