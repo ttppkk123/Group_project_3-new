@@ -362,10 +362,10 @@
                   <?php echo $doc['spec']; ?>
                 </h6>
                 <div class="social_box">
-                  <a href="<?php echo $doc['facebook']; ?>">
-                  <a href="<?php echo $doc['twitter']; ?>">
-                  <a href="<?php echo $doc['linkedin']; ?>">
-                  <a href="<?php echo $doc['instagram']; ?>">
+                  <a href="<?php echo $doc['facebook']; ?>"><i class="fa fa-facebook"></i></a>
+                  <a href="<?php echo $doc['twitter']; ?>"><i class="fa fa-twitter"></i></a>
+                  <a href="<?php echo $doc['linkedin']; ?>"><i class="fa fa-linkedin"></i></a>
+                  <a href="<?php echo $doc['instagram']; ?>"><i class="fa fa-instagram"></i></a>
                 </div>
               </div>
             </div>
