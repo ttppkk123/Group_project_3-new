@@ -348,7 +348,7 @@
       </div>
       <div class="carousel-wrap ">
         <div class="owl-carousel team_carousel">
-          <?php foreach ($doctors as $index ==> $doc): ?>
+          <?php foreach ($doctors as $index => $doc): ?>
             <div class="item">
               <div class="box">
                 <div class="img-box">
