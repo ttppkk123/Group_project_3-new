@@ -32,21 +32,25 @@ $treatments = [
         "img" => "images/t1.png",
         "title" => "Nephrologist Care",
         "desc" => "alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+        "link" => "treatment.php?id=1"
     ],
     [
         "img" => "images/t2.png",
         "title" => "Eye Care",
         "desc" => "alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+        "link" => "treatment.php?id=2"
     ],
     [
         "img" => "images/t3.png",
         "title" => "Pediatrician Clinic",
         "desc" => "alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+        "link" => "treatment.php?id=3"
     ],
     [
         "img" => "images/t4.png",
         "title" => "Parental Care",
         "desc" => "alteration in some form, by injected humour, or randomised words which don't look even slightly e sure there isn't anything"
+        "link" => "treatment.php?id=4"
     ]
 ];
 
