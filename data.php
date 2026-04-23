@@ -3,13 +3,27 @@
 $slider = [
     [
         "title" => "Mico Hospital",
-        "text" => "Lorem ipsum text",
-        "img" => "images/slider-img.jpg"
+        "highlight" => "Hospital",
+        "text" => "when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to",
+        "img" => "images/slider-img.jpg",
+        "button" => "Contact Us",
+        "link" => "contact.php"
     ],
     [
         "title" => "Best Care",
-        "text" => "Another slide text",
-        "img" => "images/slider-img.jpg"
+        "highlight" => "Service",
+        "text" => "High quality medical service with modern equipment and professional staff.",
+        "img" => "images/slider-img.jpg",
+        "button" => "Contact Us",
+        "link" => "contact.php"
+    ],
+    [
+        "title" => "Trusted Doctors",
+        "highlight" => "Clinic",
+        "text" => "We provide trusted healthcare solutions for all patients.",
+        "img" => "images/slider-img.jpg",
+        "button" => "Contact Us",
+        "link" => "contact.php"
     ]
 ];
 
