@@ -275,7 +275,6 @@
   </section>
   <!-- end info_section -->
 
-  <!-- end info_section -->
 
 
   <!-- footer section -->
