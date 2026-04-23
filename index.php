@@ -135,7 +135,8 @@
       </div>
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <?php foreach ($slider as $index => $slide): ?>
+          <div class="carousel-item <?php if ($index === 0) echo 'active'; ?>">
             <div class="container ">
               <div class="row">
                 
@@ -172,6 +173,7 @@
               </div>
             </div>
           </div>
+          <?php endforeach; ?>
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
