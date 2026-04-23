@@ -1,5 +1,14 @@
 <?php
 
+$nav = [
+    ["title" => "Home", "url" => "index.php", "active" => true],
+    ["title" => "About", "url" => "about.php", "active" => false],
+    ["title" => "Treatment", "url" => "treatment.php", "active" => false],
+    ["title" => "Doctors", "url" => "doctor.php", "active" => false],
+    ["title" => "Testimonial", "url" => "testimonial.php", "active" => false],
+    ["title" => "Contact Us", "url" => "contact.php", "active" => false]
+];
+
 $slider = [
     [
         "title" => "Mico Hospital",
