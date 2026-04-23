@@ -133,14 +133,17 @@ $posts = [
     [
         "img" => "images/post2.jpg",
         "text" => "Normal distribution"
-    ],
+    ]
+];
+
+$news = [
     [
         "img" => "images/post3.jpg",
-        "text" => "Medical update"
+        "text" => "Health news"
     ],
     [
         "img" => "images/post4.png",
-        "text" => "Health news"
+        "text" => "Hospital update"
     ]
 ];
 
