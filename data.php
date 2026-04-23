@@ -127,11 +127,11 @@ $site = [
 
 $links = [
     ["title" => "Home", "url" => "index.php"],
-    ["title" => "About", "url" => "about.php"],
-    ["title" => "Treatment", "url" => "treatment.php"],
-    ["title" => "Doctors", "url" => "doctor.php"],
-    ["title" => "Testimonial", "url" => "testimonial.php"],
-    ["title" => "Contact us", "url" => "contact.php"]
+    ["title" => "About", "url" => "about.html"],
+    ["title" => "Treatment", "url" => "treatment.html"],
+    ["title" => "Doctors", "url" => "doctor.html"],
+    ["title" => "Testimonial", "url" => "testimonial.html"],
+    ["title" => "Contact us", "url" => "contact.html"]
 ];
 
 $posts = [
