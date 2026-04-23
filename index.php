@@ -82,18 +82,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
-
-                  <li class="nav-item <?php echo !empty($item['active']) ? 'active' : ''; ?>">
-                  <a class="nav-link" href="<?php echo $item['url']; ?>">
-                    <?php echo $item['title']; ?>
-            
-                    <?php if (!empty($item['active'])): ?>
-                      <span class="sr-only">(current)</span>
-                    <?php endif; ?>
-    
-                    </a>
-                  </li>
-                <?php endforeach; ?>
+                  <?php foreach ($nav as $item): ?>
+                    <li class="nav-item <?php echo !empty($item['active']) ? 'active' : ''; ?>">
+                    <a class="nav-link" href="<?php echo $item['url']; ?>">
+                      <?php echo $item['title']; ?>
+              
+                      <?php if (!empty($item['active'])): ?>
+                        <span class="sr-only">(current)</span>
+                      <?php endif; ?>
+      
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
                 </ul>
               </div>
               <div class="quote_btn-container">
