@@ -1,0 +1,15 @@
+/* submit.css */
+
+.confirmation_container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirmation_container h1 {
+  color: #00c6a9;
+}
