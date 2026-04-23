@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>დადასტურება</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="submit.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/submit.css">
 </head>
 <body>
 
