@@ -172,7 +172,6 @@
               </div>
             </div>
           </div>
-          <?php endforeach; ?>
         </div>
         <div class="carousel_btn-box">
           <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
