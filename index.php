@@ -501,73 +501,56 @@
                 </span>
               </a>
             </div>
+            
+            <!-- SOCIAL BOX -->
             <div class="social_box">
-              <a href="">
+              <a href="<?php echo $site['social']['facebook']; ?>">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['twitter']; ?>">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['linkedin']; ?>">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['instagram']; ?>">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
+          <!-- USEFUL LINKS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_links">
               <h5>
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
-                  Home
-                </a>
-                <a href="about.html">
-                  About
-                </a>
-                <a href="treatment.html">
-                  Treatment
-                </a>
-                <a href="doctor.html">
-                  Doctors
-                </a>
-                <a href="testimonial.html">
-                  Testimonial
-                </a>
-                <a href="contact.html">
-                  Contact us
-                </a>
+                <?php foreach ($links as $link): ?>
+                  <a href="<?php echo $link['url']; ?>">
+                    <?php echo $link['title']; ?>
+                  </a>
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
+          <!-- LATEST POSTS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_post">
               <h5>
                 LATEST POSTS
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
+              <?php foreach (array_slice($posts, 0, 2) as $post): ?>
+                <div class="post_box">
+                  <div class="img-box">
+                    <img src="<?php echo $post['img']; ?>" alt="">
+                  </div>
+                  <p><?php echo $post['text']; ?></p>
                 </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
+
+          <!-- NEWS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_post">
               <h5>
