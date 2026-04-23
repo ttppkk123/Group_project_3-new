@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>დადასტურება</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="submit.css">
 </head>
 <body>
 
