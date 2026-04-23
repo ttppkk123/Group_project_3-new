@@ -2,11 +2,11 @@
 
 $nav = [
     ["title" => "Home", "url" => "index.php", "active" => true],
-    ["title" => "About", "url" => "about.html", "active" => false],
-    ["title" => "Treatment", "url" => "treatment.html", "active" => false],
-    ["title" => "Doctors", "url" => "doctor.html", "active" => false],
-    ["title" => "Testimonial", "url" => "testimonial.html", "active" => false],
-    ["title" => "Contact Us", "url" => "contact.html", "active" => false]
+    ["title" => "About", "url" => "about.php", "active" => false],
+    ["title" => "Treatment", "url" => "treatment.php", "active" => false],
+    ["title" => "Doctors", "url" => "doctor.php", "active" => false],
+    ["title" => "Testimonial", "url" => "testimonial.php", "active" => false],
+    ["title" => "Contact Us", "url" => "contact.php", "active" => false]
 ];
 
 $slider = [
@@ -127,11 +127,11 @@ $site = [
 
 $links = [
     ["title" => "Home", "url" => "index.php"],
-    ["title" => "About", "url" => "about.html"],
-    ["title" => "Treatment", "url" => "treatment.html"],
-    ["title" => "Doctors", "url" => "doctor.html"],
-    ["title" => "Testimonial", "url" => "testimonial.html"],
-    ["title" => "Contact us", "url" => "contact.html"]
+    ["title" => "About", "url" => "about.php"],
+    ["title" => "Treatment", "url" => "treatment.php"],
+    ["title" => "Doctors", "url" => "doctor.php"],
+    ["title" => "Testimonial", "url" => "testimonial.php"],
+    ["title" => "Contact us", "url" => "contact.php"]
 ];
 
 $posts = [
