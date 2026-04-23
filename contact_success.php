@@ -7,10 +7,11 @@
 </head>
 <body>
 
-<?php
-echo "<h1>Your form is submitted.</h1>";
-echo "<a href='index.php'>Back</a>";
-?>
-
+    <div class="success_container">
+        <?php
+        echo "<h1>Your form is submitted.</h1>";
+        echo "<a href='index.php'>Back</a>";
+        ?>
+    </div>
 </body>
 </html>
