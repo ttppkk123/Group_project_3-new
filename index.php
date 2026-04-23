@@ -533,7 +533,7 @@
               <h5>
                 LATEST POSTS
               </h5>
-              <?php foreach (array_slice($posts, 0, 2) as $post): ?>
+              <?php foreach ($latest_posts as $post): ?>
                 <div class="post_box">
                   <div class="img-box">
                     <img src="<?php echo $post['img']; ?>" alt="">
@@ -550,24 +550,14 @@
               <h5>
                 News
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
+              <?php foreach ($news as $post): ?>
+                <div class="post_box">
+                  <div class="img-box">
+                    <img src="<?php echo $post['img']; ?>"" alt="">
+                  </div>
+                  <p><?php echo $post['text']; ?>/p>
                 </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
         </div>
