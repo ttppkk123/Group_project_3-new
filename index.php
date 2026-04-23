@@ -392,7 +392,7 @@
       <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <?php foreach ($testimonials as $index => $t): ?>
-            <div class="carousel-item active">
+            <div class="carousel-item <?php if ($index === 0) echo 'active'; ?>">
               <div class="box">
                 <div class="client_info">
                   <div class="client_name">
