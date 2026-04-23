@@ -1,3 +1,4 @@
+<?php include 'data.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -48,13 +49,13 @@
             <a href="">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call : +01 123455678990
+                Call : <?php echo $site['phone']; ?>
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+                Email : <?php echo $site['email']; ?>
               </span>
             </a>
             <a href="">
@@ -69,10 +70,10 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="">
+            <a class="navbar-brand" href="index.php">
+              <img src="<?php echo $site['logo']; ?>" alt="">
             </a>
-            </a>
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -81,24 +82,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="d-flex mr-auto flex-column flex-lg-row align-items-center">
                 <ul class="navbar-nav  ">
-                  <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="about.html"> About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="treatment.html">Treatment</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="doctor.html">Doctors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="testimonial.html">Testimonial</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
+                  <?php foreach ($nav as $item): ?>
+                    <li class="nav-item <?php echo !empty($item['active']) ? 'active' : ''; ?>">
+                    <a class="nav-link" href="<?php echo $item['url']; ?>">
+                      <?php echo $item['title']; ?>
+              
+                      <?php if (!empty($item['active'])): ?>
+                        <span class="sr-only">(current)</span>
+                      <?php endif; ?>
+      
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
                 </ul>
               </div>
               <div class="quote_btn-container">
@@ -126,7 +121,7 @@
       </div>
     </header>
     <!-- end header section -->
-  </div>
+ </div>
 
 
   <!-- about section -->
@@ -161,13 +156,13 @@
   <!-- end about section -->
 
 
-  <!-- info section -->
+ <!-- info section -->
   <section class="info_section ">
     <div class="container">
       <div class="info_top">
         <div class="info_logo">
           <a href="">
-            <img src="images/logo.png" alt="">
+            <img src="<?php echo $site['logo']; ?>" alt="">
           </a>
         </div>
         <div class="info_form">
@@ -188,113 +183,80 @@
             <div class="info_contact">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span><?php echo $site['address']; ?></span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <span><?php echo $site['phone']; ?></span>
               </a>
               <a href="">
                 <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span><?php echo $site['email']; ?></span>
               </a>
             </div>
+            
+            <!-- SOCIAL BOX -->
             <div class="social_box">
-              <a href="">
+              <a href="<?php echo $site['social']['facebook']; ?>">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['twitter']; ?>">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['linkedin']; ?>">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="<?php echo $site['social']['instagram']; ?>">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
+          <!-- USEFUL LINKS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_links">
               <h5>
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a href="index.html">
-                  Home
-                </a>
-                <a class="active" href="about.html">
-                  About
-                </a>
-                <a href="treatment.html">
-                  Treatment
-                </a>
-                <a href="doctor.html">
-                  Doctors
-                </a>
-                <a href="testimonial.html">
-                  Testimonial
-                </a>
-                <a href="contact.html">
-                  Contact us
-                </a>
+                <?php foreach ($links as $link): ?>
+                  <a href="<?php echo $link['url']; ?>">
+                    <?php echo $link['title']; ?>
+                  </a>
+                <?php endforeach; ?>
               </div>
             </div>
           </div>
+          <!-- LATEST POSTS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_post">
               <h5>
                 LATEST POSTS
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post1.jpg" alt="">
+              <?php foreach ($latest_posts as $post): ?>
+                <div class="post_box">
+                  <div class="img-box">
+                    <img src="<?php echo $post['img']; ?>" alt="">
+                  </div>
+                  <p><?php echo $post['text']; ?></p>
                 </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post2.jpg" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
+
+          <!-- NEWS -->
           <div class="col-md-6 col-lg-3">
             <div class="info_post">
               <h5>
                 News
               </h5>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post3.jpg" alt="">
+              <?php foreach ($news as $post): ?>
+                <div class="post_box">
+                  <div class="img-box">
+                    <img src="<?php echo $post['img']; ?>"" alt="">
+                  </div>
+                  <p><?php echo $post['text']; ?></p>
                 </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
-              <div class="post_box">
-                <div class="img-box">
-                  <img src="images/post4.png" alt="">
-                </div>
-                <p>
-                  Normal
-                  distribution
-                </p>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
         </div>
@@ -302,7 +264,6 @@
     </div>
   </section>
   <!-- end info_section -->
-
 
   <!-- footer section -->
   <footer class="footer_section">
