@@ -463,7 +463,7 @@
       <div class="info_top">
         <div class="info_logo">
           <a href="">
-            <img src="images/logo.png" alt="">
+            <img src="<?php echo $site['logo']; ?>" alt="">
           </a>
         </div>
         <div class="info_form">
@@ -484,21 +484,15 @@
             <div class="info_contact">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span><?php echo $site['address']; ?></span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <span><?php echo $site['phone']; ?></span>
               </a>
               <a href="">
                 <i class="fa fa-envelope"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span><?php echo $site['email']; ?></span>
               </a>
             </div>
             
