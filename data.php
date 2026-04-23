@@ -58,17 +58,29 @@ $doctors = [
     [
         "name" => "Hennry",
         "spec" => "MBBS",
-        "img" => "images/team1.jpg"
+        "img" => "images/team1.jpg",
+        "facebook" => "#",
+        "twitter" => "#",
+        "linkedin" => "#",
+        "instagram" => "#"
     ],
     [
         "name" => "Jenni",
         "spec" => "MBBS",
-        "img" => "images/team2.jpg"
+        "img" => "images/team2.jpg",
+        "facebook" => "#",
+        "twitter" => "#",
+        "linkedin" => "#",
+        "instagram" => "#"
     ],
     [
         "name" => "Morco",
         "spec" => "MBBS",
-        "img" => "images/team3.jpg"
+        "img" => "images/team3.jpg",
+        "facebook" => "#",
+        "twitter" => "#",
+        "linkedin" => "#",
+        "instagram" => "#"
     ]
 ];
 
