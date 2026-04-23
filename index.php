@@ -282,8 +282,8 @@
 
                    <!-- added -->
                    <?php foreach ($treatments as $treat): ?>
-                    <option value="<?php echo $treat['name']; ?>">
-                      <?php echo $treat['name']; ?>
+                    <option value="<?php echo $treat['title']; ?>">
+                      <?php echo $treat['title']; ?>
                     </option>
                   <?php endforeach; ?>
                 </select>
