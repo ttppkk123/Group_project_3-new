@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Contact Success</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact_success.css">
 </head>
 <body>
 
