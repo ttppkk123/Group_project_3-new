@@ -348,12 +348,11 @@
       </div>
       <div class="carousel-wrap ">
         <div class="owl-carousel team_carousel">
-          <?php foreach ($doctors as $doc): ?>
-            <div class="carousel-item <?php if ($index === 0) echo 'active'; ?>">
+          <?php foreach ($doctors as $index ==> $doc): ?>
             <div class="item">
               <div class="box">
                 <div class="img-box">
-                  <img src="<?php echo $doc['img']; ?>" alt="" />
+                  <img src="<?php echo $doc['img']; ?>" alt="">
                 </div>
                 <div class="detail-box">
                   <h5>
@@ -372,7 +371,6 @@
               </div>
             </div>
           <?php endforeach; ?>
-          </div>
         </div>
       </div>
     </div>
