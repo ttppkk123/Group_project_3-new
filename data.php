@@ -2,11 +2,11 @@
 
 $nav = [
     ["title" => "Home", "url" => "index.php", "active" => true],
-    ["title" => "About", "url" => "about.php", "active" => false],
-    ["title" => "Treatment", "url" => "treatment.php", "active" => false],
-    ["title" => "Doctors", "url" => "doctor.php", "active" => false],
-    ["title" => "Testimonial", "url" => "testimonial.php", "active" => false],
-    ["title" => "Contact Us", "url" => "contact.php", "active" => false]
+    ["title" => "About", "url" => "about.html", "active" => false],
+    ["title" => "Treatment", "url" => "treatment.html", "active" => false],
+    ["title" => "Doctors", "url" => "doctor.html", "active" => false],
+    ["title" => "Testimonial", "url" => "testimonial.html", "active" => false],
+    ["title" => "Contact Us", "url" => "contact.html", "active" => false]
 ];
 
 $slider = [
