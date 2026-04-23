@@ -102,3 +102,45 @@ $testimonials = [
     ]
 ];
 
+$site = [
+    "logo" => "images/logo.png",
+    "address" => "New Taipei, Taiwan",
+    "phone" => "+01 1234567890",
+    "email" => "demo@gmail.com",
+
+    "social" => [
+        "facebook" => "#",
+        "twitter" => "#",
+        "linkedin" => "#",
+        "instagram" => "#"
+    ]
+];
+
+$links = [
+    ["title" => "Home", "url" => "index.php"],
+    ["title" => "About", "url" => "about.php"],
+    ["title" => "Treatment", "url" => "treatment.php"],
+    ["title" => "Doctors", "url" => "doctor.php"],
+    ["title" => "Testimonial", "url" => "testimonial.php"],
+    ["title" => "Contact us", "url" => "contact.php"]
+];
+
+$posts = [
+    [
+        "img" => "images/post1.jpg",
+        "text" => "Normal distribution"
+    ],
+    [
+        "img" => "images/post2.jpg",
+        "text" => "Normal distribution"
+    ],
+    [
+        "img" => "images/post3.jpg",
+        "text" => "Medical update"
+    ],
+    [
+        "img" => "images/post4.png",
+        "text" => "Health news"
+    ]
+];
+
